@@ -1,0 +1,51 @@
+# SQL SELECT Fundamentals
+
+## Descripción
+
+Este proyecto fue desarrollado como práctica del curso de Data Analytics.
+
+El objetivo es aprender a utilizar consultas básicas en SQL mediante la sentencia `SELECT`, seleccionando datos específicos y utilizando alias (`AS`) para presentar la información de una forma más clara y comprensible para usuarios no técnicos.
+
+## Contenido del proyecto
+
+- Exploración de todos los datos con `SELECT *`.
+- Selección de columnas específicas.
+- Uso de alias (`AS`) para renombrar columnas.
+- Documentación del proyecto.
+
+## Tecnologías utilizadas
+
+- SQL Server
+- SQL Server Management Studio (SSMS)
+- GitHub
+
+## ¿Por qué es mala práctica usar `SELECT *` en producción?
+
+Aunque `SELECT *` resulta útil para explorar rápidamente una tabla durante el desarrollo, en un entorno de producción no es recomendable por varias razones:
+
+- **Rendimiento:** devuelve todas las columnas de la tabla, incluso las que no son necesarias, aumentando el tiempo de consulta y el consumo de recursos.
+- **Mantenibilidad:** si la estructura de la tabla cambia (por ejemplo, se agregan nuevas columnas), las consultas pueden devolver información inesperada.
+- **Seguridad:** puede exponer datos sensibles que no deberían mostrarse a todos los usuarios.
+
+Por estas razones, es una buena práctica seleccionar únicamente las columnas que realmente se necesitan.
+
+## ¿Por qué son importantes los alias para un stakeholder no técnico?
+
+Los alias permiten mostrar nombres más claros y fáciles de entender para personas que no conocen la estructura de la base de datos.
+
+Por ejemplo:
+
+| Nombre original | Alias |
+|-----------------|---------------------|
+| `order_date` | `fecha_pedido` |
+| `product_name` | `nombre_producto` |
+| `quantity` | `cantidad_unidades` |
+| `total_amount` | `monto_total` |
+
+De esta manera, un reporte puede ser interpretado fácilmente por áreas como Finanzas, Ventas o Gerencia sin necesidad de conocer los nombres técnicos utilizados en la base de datos.
+
+## Autor
+
+**Nicolás Omar Gastiazoro**
+
+Curso: Data Analytics
